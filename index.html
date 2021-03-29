@@ -6,12 +6,45 @@
 
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="SitePoint" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/custom.css" />
   </head>
 
-  <body>
-    <h1>Hello World!!</h1>
+  <body class="overflow-y-hidden">
+    <div
+      class="flex flex-col justify-center content-center min-h-screen flex-grow overflow-y-hidden"
+    >
+      <div>
+        <img class="w-full max-w-4xl mx-auto mb-10" src="/assets/logo.png" />
+      </div>
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div class="flex flex-row justify-center">
+        <a href="https://soundcloud.com/officialomcada">
+          <img
+            class="h-14 w-auto transform hover:bg-gray-700 rounded-full mx-4"
+            src="assets/bandcamp-button-circle-line-green-128.png"
+          />
+        </a>
+        <a href="https://officialomcadamusic.bandcamp.com">
+          <img class="h-14 w-auto transform hover:bg-gray-700 rounded-full mx-4"
+          src="/assets/soundcloud-edited.png"
+        </a>
+      </div>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
